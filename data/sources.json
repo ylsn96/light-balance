@@ -1,0 +1,367 @@
+{
+  "id": "usda-sr-legacy-april-2018",
+  "title": "USDA FoodData Central — SR Legacy",
+  "publisher": "U.S. Department of Agriculture, Agricultural Research Service",
+  "sourceUrl": "https://fdc.nal.usda.gov/fdc-datasets/FoodData_Central_sr_legacy_food_json_2018-04.zip",
+  "downloadPage": "https://fdc.nal.usda.gov/download-datasets/",
+  "dataRelease": "April 2018",
+  "retrieved": "2026-11-18",
+  "sourceFile": "FoodData_Central_sr_legacy_food_json_2018-04.json",
+  "sourceSha256": "70d4235ae3a2bdf48a7b9eaa1286a83fa67b6f3270436c9ce8b008213f500129",
+  "license": "Public domain",
+  "attribution": "Nutrient data: USDA FoodData Central, SR Legacy, April 2018. USDA food composition data are in the public domain. Chinese labels and application categories are app curation, not USDA translations or endorsement.",
+  "nutrientBasis": "Per 100 g edible food; energy in kcal; protein, carbohydrate and fat in g. Values are extracted from nutrient IDs 1008, 1003, 1005 and 1004, respectively. No calculated substitutes or rounding. Zero is retained; missing or unusable macronutrients are null.",
+  "inclusionRule": "Include every record with an actual finite, nonnegative kcal value (nutrient 1008, kcal unit). Missing or unusable kcal records are excluded; unexpected units or duplicate nutrients fail the import.",
+  "portionNote": "APP ESTIMATES ONLY, NOT USDA-VERIFIED PORTIONS. Curated default portions are estimated edible gram weights per unit, including 50 g edible weight per hard-boiled egg. All portion gram weights must be editable in the app. Noncurated records default to 100 g per 份. USDA foodPortions are not used. Liquids are weighed in grams, not converted from mL.",
+  "categoryNote": "Seven coarse app categories derived from USDA foodCategory, with explicit curated and bread/butter/peanut overrides. Mixed dishes and unmapped categories use 其他. Categories do not change nutrient values.",
+  "counts": {
+    "source": 7793,
+    "included": 7793,
+    "excluded": 0,
+    "featured": 45
+  },
+  "excludedFdcIds": [],
+  "ranges": {
+    "kcal": {
+      "min": 0,
+      "max": 902,
+      "missing": 0,
+      "zero": 37
+    },
+    "protein": {
+      "min": 0,
+      "max": 88.3,
+      "missing": 0,
+      "zero": 333
+    },
+    "carbs": {
+      "min": 0,
+      "max": 100,
+      "missing": 0,
+      "zero": 2138
+    },
+    "fat": {
+      "min": 0,
+      "max": 100,
+      "missing": 0,
+      "zero": 328
+    }
+  },
+  "curatedMatches": [
+    {
+      "fdcId": 167762,
+      "name": "草莓（生）",
+      "description": "Strawberries, raw",
+      "portion": 100,
+      "unit": "份"
+    },
+    {
+      "fdcId": 167765,
+      "name": "西瓜（生，可食部）",
+      "description": "Watermelon, raw",
+      "portion": 200,
+      "unit": "份"
+    },
+    {
+      "fdcId": 168153,
+      "name": "绿心猕猴桃（生，可食部）",
+      "description": "Kiwifruit, green, raw",
+      "portion": 75,
+      "unit": "个"
+    },
+    {
+      "fdcId": 168250,
+      "name": "猪里脊（仅瘦肉，烤熟）",
+      "description": "Pork, fresh, loin, tenderloin, separable lean only, cooked, roasted",
+      "portion": 100,
+      "unit": "份"
+    },
+    {
+      "fdcId": 168409,
+      "name": "黄瓜（带皮，生）",
+      "description": "Cucumber, with peel, raw",
+      "portion": 200,
+      "unit": "根"
+    },
+    {
+      "fdcId": 168462,
+      "name": "菠菜（生）",
+      "description": "Spinach, raw",
+      "portion": 100,
+      "unit": "份"
+    },
+    {
+      "fdcId": 168484,
+      "name": "红薯（去皮水煮）",
+      "description": "Sweet potato, cooked, boiled, without skin",
+      "portion": 150,
+      "unit": "份"
+    },
+    {
+      "fdcId": 168926,
+      "name": "鸡蛋面（熟，未强化，未加盐）",
+      "description": "Noodles, egg, unenriched, cooked, without added salt",
+      "portion": 200,
+      "unit": "碗"
+    },
+    {
+      "fdcId": 169097,
+      "name": "橙子（生，市售各品种，可食部）",
+      "description": "Oranges, raw, all commercial varieties",
+      "portion": 130,
+      "unit": "个"
+    },
+    {
+      "fdcId": 169118,
+      "name": "梨（生）",
+      "description": "Pears, raw",
+      "portion": 180,
+      "unit": "个"
+    },
+    {
+      "fdcId": 169249,
+      "name": "绿叶生菜（生）",
+      "description": "Lettuce, green leaf, raw",
+      "portion": 100,
+      "unit": "份"
+    },
+    {
+      "fdcId": 169251,
+      "name": "白蘑菇（生）",
+      "description": "Mushrooms, white, raw",
+      "portion": 100,
+      "unit": "份"
+    },
+    {
+      "fdcId": 169704,
+      "name": "糙米饭（长粒米，熟）",
+      "description": "Rice, brown, long-grain, cooked (Includes foods for USDA's Food Distribution Program)",
+      "portion": 150,
+      "unit": "碗"
+    },
+    {
+      "fdcId": 169756,
+      "name": "白米（长粒米，生，未强化）",
+      "description": "Rice, white, long-grain, regular, raw, unenriched",
+      "portion": 50,
+      "unit": "份"
+    },
+    {
+      "fdcId": 169757,
+      "name": "白米饭（长粒米，熟，无盐，未强化）",
+      "description": "Rice, white, long-grain, regular, unenriched, cooked without salt",
+      "portion": 150,
+      "unit": "碗"
+    },
+    {
+      "fdcId": 169928,
+      "name": "黄肉桃（生）",
+      "description": "Peaches, yellow, raw",
+      "portion": 150,
+      "unit": "个"
+    },
+    {
+      "fdcId": 169967,
+      "name": "西兰花（水煮沥干，无盐）",
+      "description": "Broccoli, cooked, boiled, drained, without salt",
+      "portion": 100,
+      "unit": "份"
+    },
+    {
+      "fdcId": 169975,
+      "name": "卷心菜（生）",
+      "description": "Cabbage, raw",
+      "portion": 100,
+      "unit": "份"
+    },
+    {
+      "fdcId": 169999,
+      "name": "黄色甜玉米粒（水煮沥干，无盐）",
+      "description": "Corn, sweet, yellow, cooked, boiled, drained, without salt",
+      "portion": 100,
+      "unit": "份"
+    },
+    {
+      "fdcId": 170000,
+      "name": "洋葱（生）",
+      "description": "Onions, raw",
+      "portion": 100,
+      "unit": "份"
+    },
+    {
+      "fdcId": 170108,
+      "name": "红甜椒（生）",
+      "description": "Peppers, sweet, red, raw",
+      "portion": 100,
+      "unit": "份"
+    },
+    {
+      "fdcId": 170187,
+      "name": "核桃仁（普通核桃）",
+      "description": "Nuts, walnuts, english",
+      "portion": 20,
+      "unit": "份"
+    },
+    {
+      "fdcId": 170393,
+      "name": "胡萝卜（生）",
+      "description": "Carrots, raw",
+      "portion": 100,
+      "unit": "份"
+    },
+    {
+      "fdcId": 170440,
+      "name": "土豆（去皮水煮，无盐）",
+      "description": "Potatoes, boiled, cooked without skin, flesh, without salt",
+      "portion": 150,
+      "unit": "份"
+    },
+    {
+      "fdcId": 170457,
+      "name": "红番茄（成熟，生，全年平均）",
+      "description": "Tomatoes, red, ripe, raw, year round average",
+      "portion": 150,
+      "unit": "个"
+    },
+    {
+      "fdcId": 170567,
+      "name": "扁桃仁",
+      "description": "Nuts, almonds",
+      "portion": 20,
+      "unit": "份"
+    },
+    {
+      "fdcId": 171284,
+      "name": "原味全脂酸奶",
+      "description": "Yogurt, plain, whole milk",
+      "portion": 150,
+      "unit": "杯"
+    },
+    {
+      "fdcId": 171411,
+      "name": "大豆油（沙拉或烹调用）",
+      "description": "Oil, soybean, salad or cooking",
+      "portion": 10,
+      "unit": "份"
+    },
+    {
+      "fdcId": 171413,
+      "name": "橄榄油（沙拉或烹调用）",
+      "description": "Oil, olive, salad or cooking",
+      "portion": 10,
+      "unit": "份"
+    },
+    {
+      "fdcId": 171477,
+      "name": "鸡胸肉（仅肉，烤熟）",
+      "description": "Chicken, broilers or fryers, breast, meat only, cooked, roasted",
+      "portion": 100,
+      "unit": "份"
+    },
+    {
+      "fdcId": 171688,
+      "name": "苹果（带皮，生）",
+      "description": "Apples, raw, with skin (Includes foods for USDA's Food Distribution Program)",
+      "portion": 180,
+      "unit": "个"
+    },
+    {
+      "fdcId": 172183,
+      "name": "鸡蛋蛋清（生，新鲜）",
+      "description": "Egg, white, raw, fresh",
+      "portion": 30,
+      "unit": "个"
+    },
+    {
+      "fdcId": 172217,
+      "name": "全脂牛奶（脂肪3.25%，未添加维生素A和D）",
+      "description": "Milk, whole, 3.25% milkfat, without added vitamin A and vitamin D",
+      "portion": 250,
+      "unit": "杯"
+    },
+    {
+      "fdcId": 172421,
+      "name": "小扁豆（成熟豆粒，水煮，无盐）",
+      "description": "Lentils, mature seeds, cooked, boiled, without salt",
+      "portion": 100,
+      "unit": "份"
+    },
+    {
+      "fdcId": 172476,
+      "name": "普通豆腐（生，硫酸钙凝固）",
+      "description": "Tofu, raw, regular, prepared with calcium sulfate",
+      "portion": 100,
+      "unit": "份"
+    },
+    {
+      "fdcId": 172688,
+      "name": "全麦面包（市售）",
+      "description": "Bread, whole-wheat, commercially prepared",
+      "portion": 30,
+      "unit": "片"
+    },
+    {
+      "fdcId": 173424,
+      "name": "水煮鸡蛋（全蛋，熟，可食部）",
+      "description": "Egg, whole, cooked, hard-boiled",
+      "portion": 50,
+      "unit": "个"
+    },
+    {
+      "fdcId": 173430,
+      "name": "黄油（无盐）",
+      "description": "Butter, without salt",
+      "portion": 10,
+      "unit": "份"
+    },
+    {
+      "fdcId": 173806,
+      "name": "花生（干烤，无盐）",
+      "description": "Peanuts, all types, dry-roasted, without salt",
+      "portion": 20,
+      "unit": "份"
+    },
+    {
+      "fdcId": 173904,
+      "name": "燕麦片（干，普通或快熟，未强化）",
+      "description": "Cereals, oats, regular and quick, not fortified, dry",
+      "portion": 40,
+      "unit": "份"
+    },
+    {
+      "fdcId": 173905,
+      "name": "燕麦粥（普通或快熟燕麦，水煮或微波，未强化，无盐）",
+      "description": "Cereals, oats, regular and quick, unenriched, cooked with water (includes boiling and microwaving), without salt",
+      "portion": 200,
+      "unit": "碗"
+    },
+    {
+      "fdcId": 173944,
+      "name": "香蕉（生，可食部）",
+      "description": "Bananas, raw",
+      "portion": 100,
+      "unit": "根"
+    },
+    {
+      "fdcId": 174683,
+      "name": "葡萄（红或绿，欧洲种，生）",
+      "description": "Grapes, red or green (European type, such as Thompson seedless), raw",
+      "portion": 100,
+      "unit": "份"
+    },
+    {
+      "fdcId": 175168,
+      "name": "大西洋三文鱼（养殖，干热烹熟）",
+      "description": "Fish, salmon, Atlantic, farmed, cooked, dry heat",
+      "portion": 100,
+      "unit": "份"
+    },
+    {
+      "fdcId": 175180,
+      "name": "虾（熟）",
+      "description": "Crustaceans, shrimp, cooked",
+      "portion": 100,
+      "unit": "份"
+    }
+  ]
+}

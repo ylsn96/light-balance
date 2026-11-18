@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#24755d">
+  <meta name="description" content="轻衡 · 私人的饮食、运动与热量管理手账。开放食物数据，无需登录，本地保存。">
+  <link rel="icon" href="./icon.svg" type="image/svg+xml">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="stylesheet" href="./style.css">
+  <title>轻衡 · 每一餐，心中有数</title>
+</head>
+<body>
+  <svg class="svg-defs" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><defs>
+    <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M20 3C9 2 3 7 5 14c2 7 15 6 15-11Z"/><path d="m4 21 11-12"/></symbol>
+    <symbol id="i-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="2"/><rect x="14" y="3" width="7" height="7" rx="2"/><rect x="3" y="14" width="7" height="7" rx="2"/><rect x="14" y="14" width="7" height="7" rx="2"/></symbol>
+    <symbol id="i-food" viewBox="0 0 24 24"><path d="M4 3v6c0 4 6 4 6 0V3M7 3v18M18 3c-5 3-5 10 0 10V3Zm0 10v8"/></symbol>
+    <symbol id="i-chart" viewBox="0 0 24 24"><path d="M3 3v18h18M7 15l4-5 4 3 6-8"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21v-2a8 8 0 0 1 16 0v2"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h16m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-flame" viewBox="0 0 24 24"><path d="M12 3c2 5-3 6-2 10 3 0 5-3 5-5 6 6 7 13-3 13C1 21 3 11 7 8c-1 5 2 4 2 2s3-4 3-7Z"/></symbol>
+    <symbol id="i-run" viewBox="0 0 24 24"><circle cx="15" cy="4" r="2"/><path d="m5 10 5-3 5 5h5M12 9l-3 6 5 2v5M9 15l-5 6"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1 1m12 12 1 1M5 19l1-1M18 6l1-1"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20 15A9 9 0 0 1 9 4a9 9 0 1 0 11 11Z"/></symbol>
+  </defs></svg>
+  <a class="skip-link" href="#main">跳至主要内容</a>
+  <aside class="sidebar">
+    <a class="brand" href="#dashboard"><span class="brand-mark"><svg><use href="#i-leaf"/></svg></span><span>轻衡<span class="brand-en">LIGHT BALANCE</span></span></a>
+    <div class="nav-caption">我的健康手账</div>
+    <nav aria-label="主导航">
+      <a href="#dashboard" data-nav="dashboard"><svg><use href="#i-grid"/></svg><span>每日概览</span></a>
+      <a href="#foods" data-nav="foods"><svg><use href="#i-food"/></svg><span>食物资料库</span></a>
+      <a href="#trends" data-nav="trends"><svg><use href="#i-chart"/></svg><span>记录与趋势</span></a>
+      <a href="#settings" data-nav="settings"><svg><use href="#i-user"/></svg><span>身体与目标</span></a>
+    </nav>
+    <div class="sidebar-note"><svg><use href="#i-leaf"/></svg><h3>小小记录，慢慢改变。</h3><p>好好吃饭，好好生活。<br>找到适合自己的平衡。</p></div>
+    <div class="local-status"><i></i>仅保存在此浏览器</div>
+  </aside>
+  <div class="workspace">
+    <header class="topbar"><div class="breadcrumb">我的空间<span>/</span><strong id="page-name">每日概览</strong></div><div class="date-control"><button id="prev-day" class="icon-button" aria-label="前一天">‹</button><input type="date" id="date" aria-label="记录日期"><button id="next-day" class="icon-button" aria-label="后一天">›</button><button id="today" class="text-button">今天</button></div><button class="avatar" data-action="settings" aria-label="身体与目标"><svg><use href="#i-user"/></svg></button></header>
+    <div id="storage-warning" class="warning-banner" role="alert" hidden></div>
+    <main id="main" tabindex="-1"><div class="loading-state">正在载入你的健康手账…</div></main>
+    <footer class="site-footer"><span>轻衡 · 让健康，回归日常</span><button class="text-button" data-action="about">数据来源与使用说明</button></footer>
+  </div>
+  <dialog id="modal" aria-labelledby="modal-title"><div id="modal-content"></div></dialog>
+  <div id="toast" class="toast" role="status" hidden></div>
+  <noscript>请启用 JavaScript 使用轻衡。所有个人记录仅保存在本机。</noscript>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
